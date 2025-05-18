@@ -1,0 +1,100 @@
+.grow-monster-device {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.grow-monster-tablet {
+    width: 600px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.grow-monster-phone {
+    width: 300px;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.grow-monster-device-content {
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.grow-monster-device-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.grow-monster-device-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.grow-monster-device-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+
+
+/* Core accordion styling */
+.grow-monster-accordion .accordion-item {
+	margin-bottom: 10px;
+}
+.grow-monster-accordion .accordion-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-style: solid;
+	cursor: pointer;
+}
+.grow-monster-accordion .heading-text {
+	flex: 1;
+}
+.grow-monster-accordion .accordion-icon {
+	margin-left: 10px;
+}
+.grow-monster-accordion .accordion-content {
+	border-style: solid;
+	border-top: none; /* Optional if you want a unified border */
+}
+
+/* Vertical layout (default) */
+.grow-monster-accordion.vertical .accordion-item {
+	display: block;
+}
+
+/* Horizontal layout (very simple example) */
+.grow-monster-accordion.horizontal {
+	display: flex;
+	flex-wrap: wrap;
+}
+.grow-monster-accordion.horizontal .accordion-item {
+	/* Each item takes equal width, adjust as needed */
+	flex: 1 1 30%;
+	margin: 0 5px 10px 5px;
+}
+
+/* Image accordion hover overlay */
+.image-accordion-item {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	min-height: 200px;
+}
+.image-accordion-item .image-overlay {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: rgba(0,0,0,0.5);
+}
+.image-accordion-item .overlay-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+}
